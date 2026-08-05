@@ -12,7 +12,7 @@ Deberá automatizar el proceso de instalación y configuración de la pila LAMP,
 
 En esta práctica vamos a trabajar con una arquitectura web basada en un único servidor.
 
-![Arquitectura LAMP](Imatges/ImagenLamp.png)
+![Arquitectura LAMP](Imatges/lamp-arquitectura.png)
 
 **Ventajas:**
 

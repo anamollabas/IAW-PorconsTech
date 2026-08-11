@@ -1,107 +1,53 @@
-# 🏢 PORÇONSTECH
+# 🏢 Projecte 1 – Construcció de la infraestructura web de PorçonsTech
 
-# OT001 · Implantació del primer servidor corporatiu
+## Benvinguts a PorçonsTech
 
----
+Has sigut contractat com a tècnic/a del departament d'infraestructures de **PorçonsTech**, una empresa tecnològica que està començant la seua activitat.
 
-## 📩 Ordre de treball
+Abans de desplegar qualsevol aplicació web, és necessari preparar una infraestructura robusta, segura i ben documentada. Aquesta serà la base sobre la qual treballarem durant tot el curs.
 
-**De:** Víctor Ferrer – Director d'Infraestructura
-
-**Per a:** Equip de Consultors Junior
-
-**Prioritat:** 🔴 Alta
+En aquesta Ordre de Treball construiràs una **pila LAMP (Linux, Apache, MariaDB i PHP)** i la protegiràs mitjançant **HTTPS**.
 
 ---
 
-## Context
+# 🎯 Objectius
 
-Benvingut/da a **PorçonsTech**.
+En finalitzar aquest projecte seràs capaç de:
 
-L'empresa acaba de començar la seua activitat i encara no disposa d'infraestructura pròpia.
-
-El Departament de Desenvolupament necessita començar a desplegar aplicacions web, però abans és imprescindible preparar un servidor estable i segur.
-
-La Direcció d'Infraestructura t'ha assignat aquesta primera Ordre de Treball.
-
-Aquest servidor serà la base sobre la qual treballaràs durant tot el curs.
-
----
-
-# 🎯 Objectiu
-
-Implantar un servidor Ubuntu Server a AWS preparat per allotjar aplicacions web.
-
-En finalitzar aquesta OT hauràs de disposar de:
-
-- Ubuntu Server operatiu.
-- Accés remot mitjançant SSH.
-- Apache instal·lat i funcionant.
-- VirtualHost configurat.
-- PHP operatiu.
-- MariaDB instal·lada.
-- Una aplicació web publicada.
-- Accés mitjançant HTTPS.
+- Comprendre què és una pila LAMP.
+- Instal·lar i configurar Apache.
+- Instal·lar i configurar MariaDB.
+- Instal·lar i configurar PHP.
+- Verificar el funcionament del servidor.
+- Configurar HTTPS.
+- Documentar la implantació.
+- Implantar una aplicació web senzilla
 
 ---
 
-# 📚 Què aprendràs
+# 📚 Què aprendràs?
 
-En aquesta Ordre de Treball aprendràs a:
+Durant aquesta OT aprendràs:
 
-- desplegar un servidor al núvol;
-- administrar serveis Linux;
-- configurar un servidor web;
-- publicar una aplicació web;
-- verificar el funcionament dels serveis;
-- documentar una implantació.
+- Els components d'una arquitectura LAMP.
+- Com desplegar un servidor web funcional.
+- Com protegir un lloc web amb HTTPS.
+- Com documentar una implantació.
 
 ---
 
-# 🗂️ Planificació
+# 🧩 Sprints
 
-| Sprint | Contingut |
-|---------|-----------|
-| Sprint 0 | Preparació d'AWS i Ubuntu Server |
-| Sprint 1 | Instal·lació d'Apache |
-| Sprint 2 | Configuració de VirtualHost |
-| Sprint 3 | Instal·lació de PHP |
-| Sprint 4 | Instal·lació de MariaDB |
-| Sprint 5 | Publicació d'una aplicació web |
-| Sprint 6 | Configuració d'HTTPS |
+## Sprint 1. Preparar i conéixer l'entorn AWS
+
+## Sprint 2. Desplegar la pila LAMP
+
+## Sprint 3. Desplegar una aplicació web senzilla
+
+## Sprint 4. Protegir el servidor amb HTTPS
 
 ---
 
 # 📦 Producte final
 
-Quan finalitze aquesta OT hauràs de disposar d'un servidor completament funcional preparat per allotjar aplicacions web.
-
-Aquest servidor continuarà utilitzant-se durant la resta del curs.
-
-No l'eliminaràs una vegada finalitzada aquesta Ordre de Treball.
-
----
-
-# ✅ Abans de començar
-
-Assegura't que:
-
-- tens accés al campus virtual;
-- disposes d'un compte d'AWS Academy;
-- tens Visual Studio Code instal·lat;
-- tens GitHub Desktop configurat;
-- pots connectar-te al teu repositori de GitHub.
-
----
-
-# 📤 Tancament
-
-Quan completes tots els Sprints hauràs de realitzar la demostració del servidor i entregar la documentació a Moodle.
-
-Bona sort.
-
-**Ana Mollá**
-
-Directora d'Infraestructura
-
-PorçonsTech
+En acabar aquesta OT disposaràs d'un servidor web segur preparat per allotjar les aplicacions de PorçonsTech.

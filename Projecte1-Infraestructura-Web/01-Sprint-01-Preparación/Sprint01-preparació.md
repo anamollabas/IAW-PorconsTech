@@ -1,210 +1,96 @@
 # Pas 1 · Preparar l'entorn de treball
 
 > [!NOTE]
-> Aquest és el primer pas del **Projecte 1 - Infraestructura Web**.
+> Aquest és el primer pas del **Sprint 1 · Preparació** del **Projecte 1 · Infraestructura Web**.
 >
-> Abans de començar a desplegar aplicacions web hem de preparar el nostre entorn de treball.
+> Abans de començar a desplegar aplicacions web, prepararem l'entorn de treball que utilitzarem durant el projecte.
 
 ---
 
-# 🎯 Objectius
+## 🎯 Objectius
 
 En finalitzar aquest pas seràs capaç de:
 
 - Accedir a AWS Academy.
-- Iniciar el laboratori (Learner Lab).
+- Iniciar el laboratori AWS Academy Learner Lab.
 - Comprendre com funciona el laboratori i el seu pressupost.
 - Instal·lar AWS CLI.
-- Configurar les credencials d'AWS.
-- Verificar que la configuració és correcta.
+- Configurar les credencials del laboratori.
+- Verificar que AWS CLI funciona correctament.
 
 ---
 
-# 📚 Abans de començar
+## 1. Accedir a AWS Academy
 
-Durant aquest curs treballarem sobre **AWS Academy Learner Lab**.
+Rebràs al teu correu corporatiu una invitació d'**AWS Academy**.
 
-Cada alumne disposa d'un laboratori amb un pressupost limitat.
+Obri el correu i accedeix a l'enllaç d'invitació.
 
-> [!WARNING]
-> Si deixes recursos engegats (instàncies EC2, bases de dades, etc.) continuaran consumint pressupost encara que no estigues treballant.
+![Invitació a AWS Academy](Imatges/01-invitacio-aws-academy.png)
 
-És molt important **aturar o eliminar els recursos** quan acabes cada sessió.
-
----
-
-# 1. Accedir a AWS Academy
-
-Rebràs un correu electrònic amb una invitació d'AWS Academy.
-
-1. Obri el correu.
-2. Prem **Comenzar**.
-3. Crea el teu compte de Canvas o inicia sessió si ja en tens un.
-4. Accedeix al curs assignat.
-
-![Invitació AWS](Imatges/aws-academy-email.png)
+Si és la primera vegada que utilitzes AWS Academy, hauràs de crear el teu compte.  
+Si ja disposes d'un compte, inicia sessió amb les teues credencials.
 
 ---
 
-# 2. Accedir al Learner Lab
+## 2. Accedir al curs i al Learner Lab
 
-Una vegada dins del curs:
+Una vegada registrat, accediràs al panell principal.
 
-1. Entra al teu curs.
-2. Selecciona **Contenidos**.
-3. Obri **Lanzamiento del laboratorio para el alumnado de AWS Academy**.
+Selecciona el curs d'AWS Academy en el qual estàs matriculat.
 
-![Canvas](Imatges/canvas.png)
+![Panell d'AWS Academy](Imatges/02-panell-canvas.png)
+
+Dins del curs, accedeix al contingut del **Learner Lab**.
+
+Selecciona l'opció de llançament del laboratori.
+
+![Accés al Learner Lab](Imatges/03-launch-lab.png)
 
 ---
 
-# 3. Llançar el laboratori
+## 3. Iniciar el laboratori
 
-Accepta els termes d'ús.
+Abans d'utilitzar el laboratori hauràs d'acceptar les condicions d'ús.
 
-Prem:
+Després, prem:
 
 **Start Lab**
 
-El laboratori començarà a preparar-se.
+![Iniciar el laboratori](Imatges/04-start-lab.png)
 
-> [!IMPORTANT]
-> Cada sessió té una duració aproximada de **4 hores**.
+Espera uns instants fins que el laboratori estiga preparat.
+
+Quan l'indicador aparega en verd, prem sobre **AWS** per accedir a la consola.
+
+> [!WARNING]
+> El laboratori disposa d'un pressupost limitat.
 >
-> Pots tornar a prémer **Start Lab** abans que finalitze la sessió per continuar treballant.
-
-Espera fins que el cercle aparega en color verd.
-
-Quan aparega en verd podràs accedir a la consola d'AWS.
-
-![Start Lab](Imatges/start-lab.png)
+> No deixes recursos en funcionament quan ja no els necessites. Les instàncies EC2, bases de dades i altres serveis poden continuar consumint pressupost encara que no estigues treballant.
 
 ---
 
-# 4. Instal·lar AWS CLI
+## 4. Accedir a la consola d'AWS
 
-Treballarem tant des de la consola web com des del terminal.
+Quan el laboratori estiga actiu, podràs accedir a la consola d'administració d'AWS.
 
-Per això hem d'instal·lar **AWS CLI**.
+![Consola d'AWS](Imatges/05-consola-aws.png)
 
-Segueix la documentació oficial:
+Des d'aquesta consola podrem crear i administrar els diferents serveis que utilitzarem durant el curs.
 
-https://docs.aws.amazon.com/es_es/cli/latest/userguide/getting-started-install.html
+---
 
-Quan finalitze la instal·lació comprova que funciona:
+## 5. Instal·lar AWS CLI
+
+AWS també es pot administrar des del terminal mitjançant **AWS CLI (Command Line Interface)**.
+
+AWS CLI ens permet executar ordres contra la infraestructura sense utilitzar la consola gràfica.
+
+Consulta les instruccions oficials d'instal·lació d'AWS CLI i selecciona el teu sistema operatiu.
+
+![Instal·lació d'AWS CLI](Imatges/06-install-aws-cli.png)
+
+Quan finalitze la instal·lació, obri un terminal i executa:
 
 ```bash
 aws --version
-```
-
-Hauries d'obtenir una eixida semblant a:
-
-```text
-aws-cli/2.x.x
-```
-
----
-
-# 5. Configurar AWS CLI
-
-Obri el panell del laboratori.
-
-Prem:
-
-**AWS Details**
-
-Després:
-
-**Show**
-
-Copia les credencials proporcionades.
-
-Ara executa:
-
-```bash
-aws configure
-```
-
-Introdueix:
-
-- Access Key
-- Secret Key
-- Region
-- Output format
-
----
-
-# 6. Verificar la configuració
-
-Executa:
-
-```bash
-aws sts get-caller-identity
-```
-
-Si apareix la informació del teu usuari, la configuració és correcta.
-
----
-
-## Si apareix un error
-
-En els laboratoris d'AWS Academy és habitual que aparega un error relacionat amb el **Session Token**.
-
-Si ocorre:
-
-1. Accedeix a:
-
-```text
-~/.aws/credentials
-```
-
-2. Esborra el contingut del fitxer.
-
-3. Copia íntegrament el contingut que apareix a **AWS Details**.
-
-4. Guarda el fitxer.
-
-5. Torna a executar:
-
-```bash
-aws sts get-caller-identity
-```
-
-Ara ja hauria de funcionar.
-
-> [!TIP]
-> Aquest procés s'haurà de repetir sempre que AWS Academy genere un nou token de sessió.
-
----
-
-# ✅ Checklist
-
-Abans de continuar comprova que:
-
-- [ ] He accedit a AWS Academy.
-- [ ] He iniciat el Learner Lab.
-- [ ] He accedit a la consola AWS.
-- [ ] He instal·lat AWS CLI.
-- [ ] `aws --version` funciona.
-- [ ] He configurat les credencials.
-- [ ] `aws sts get-caller-identity` funciona correctament.
-
----
-
-# 📸 Evidències
-
-Inclou al README del Sprint les següents captures:
-
-- AWS Academy.
-- Learner Lab en funcionament.
-- Consola AWS.
-- Resultat de `aws --version`.
-- Resultat de `aws sts get-caller-identity`.
-
----
-
-# 🚀 Següent pas
-
-Quan hages completat totes les comprovacions, continua amb:
-
-➡️ **Pas 2 · Primera connexió a una instància EC2**

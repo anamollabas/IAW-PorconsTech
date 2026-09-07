@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+REPO="https://github.com/josejuansanchez/iaw-practica-lamp.git"
+TMP="/tmp/iaw-practica-lamp"
+
+echo "▶ Preparant una còpia de treball de l'aplicació..."
+
+rm -rf "$TMP" app sql
+git clone --depth 1 "$REPO" "$TMP"
+
+mkdir -p app sql
+
+cp -a "$TMP/src/." app/
+cp "$TMP/db/database.sql" sql/database.sql
+
+rm -rf "$TMP"
+
+echo "✅ Aplicació preparada."
+echo "Ara revisa i modifica app/config.php segons la guia del Sprint."

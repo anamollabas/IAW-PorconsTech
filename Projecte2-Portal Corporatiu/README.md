@@ -1,175 +1,155 @@
-
 # 🌐 Projecte 2 · Portal Corporatiu amb WordPress
 
-> [!IMPORTANT]
-> Aquest projecte **continua el desenvolupament** de la infraestructura creada al **Projecte 1 · Infraestructura Web**.
->
-> Durant tot el curs treballarem sobre el **mateix servidor**, que anirà evolucionant projecte rere projecte.
->
-> Es pressuposa que el servidor disposa, com a mínim, de:
->
-> - Ubuntu Server
-> - Apache HTTP Server
-> - PHP
-> - MariaDB
-> - HTTPS configurat
->
-> Si el teu servidor no compleix aquests requisits, completa primer el **Projecte 1** abans de continuar.
->
-> **Opcionalment**, pots crear una **AMI** com a còpia de seguretat abans d'iniciar aquest projecte.
+## 🎯 Repte
 
+PorçonsTech necessita un portal corporatiu que puga ser gestionat i evolucionat sense editar manualment totes les pàgines del lloc.
 
-> [!NOTE]
-> Aquest Sprint està basat en la pràctica **1.6 · Implantació de WordPress** de **José Juan Sánchez**, adaptada a la metodologia **PorçonsTech**.
+Durant aquest projecte:
 
-> [!IMPORTANT]
-> **Client:** PorçonsTech  
-> **Departament:** Desenvolupament Web  
-> **Duració:** 20 hores (aprox.)  
-> **Resultats d'Aprenentatge principals:** RA2 i RA3
+1. implantaràs WordPress;
+2. administraràs el portal amb WP-CLI;
+3. adaptaràs l'aparença i una funcionalitat mitjançant codi.
 
 ---
 
-# 🎯 Repte
+## ⏱️ Duració
 
-Després d'haver desplegat la infraestructura web de PorçonsTech, l'empresa necessita publicar la seua primera pàgina web corporativa.
-
-Com a membre de l'equip tècnic, hauràs d'implantar un gestor de continguts (CMS), configurar-lo perquè siga segur i funcional, i administrar-lo perquè els futurs editors puguen gestionar els continguts sense necessitat de coneixements tècnics.
-
-Al final del projecte hauràs desplegat i administrat un lloc web professional basat en **WordPress**.
+**23 hores aproximadament**
 
 ---
 
-# 📦 Producte final
+## 📚 Resultats d'aprenentatge
 
-En finalitzar aquest projecte hauràs desenvolupat una solució formada per:
+### RA2 · Implantació de gestors de continguts
 
-- WordPress instal·lat sobre la infraestructura creada al Projecte 1.
-- Base de dades configurada.
-- Configuració inicial del CMS.
-- Usuaris i rols definits.
-- Tema personalitzat.
-- Plugins instal·lats i configurats.
-- Sistema actualitzat i administrat amb WP-CLI.
-- Repositori GitHub documentat amb tot el procés.
+Treballarem la utilitat, característiques, instal·lació, configuració, seguretat, comprovació i publicació d'un CMS.
 
----
+### RA3 · Administració de gestors de continguts
 
-# 🛠 Tecnologies
+Treballarem plugins, usuaris i rols, còpies de seguretat, importació/exportació, temes, RSS, actualitzacions i informes d'accés.
 
-Durant aquest projecte treballarem amb:
+### RA7 · Adaptació de gestors de continguts
 
-- WordPress
-- WP-CLI
-- Apache HTTP Server
-- PHP
-- MariaDB
-- Ubuntu Server
-- OpenSSH
-- Git
-- GitHub
-- Visual Studio Code
+Treballarem l'estructura interna de WordPress, els fitxers implicats en una adaptació, la modificació de codi, la verificació i la documentació dels canvis.
 
 ---
 
-# 📁 Estructura del projecte
+# 🧩 Organització del projecte
 
-Aquest projecte està dividit en dos Sprints.
+## Sprint 1 · Implantar WordPress
 
-| Sprint | Objectiu |
-|---------|----------|
-| Sprint 1 | Implantar WordPress |
-| Sprint 2 | Administrar WordPress |
+Instal·lació i configuració del portal corporatiu sobre la infraestructura creada en el Projecte 1.
 
-Cada Sprint està format per diferents passos que hauràs de completar abans de continuar amb el següent.
+Treballaràs:
 
----
-
-# 📚 Abans de començar
-
-Per realitzar aquest projecte és necessari haver completat satisfactòriament el **Projecte 1 · Infraestructura Web**, ja que reutilitzarem la infraestructura desplegada anteriorment.
-
----
-
-# 🎯 Resultats d'aprenentatge
-
-En completar aquest projecte seràs capaç de:
-
-- Comprendre la utilitat dels gestors de continguts.
-- Implantar un CMS professional.
-- Configurar WordPress perquè funcione correctament.
-- Administrar usuaris, rols i permisos.
-- Gestionar temes i plugins.
-- Realitzar tasques de manteniment i actualització.
-- Automatitzar tasques bàsiques d'administració mitjançant WP-CLI.
-- Documentar tot el procés en un repositori GitHub.
+- instal·lació manual de WordPress;
+- base de dades;
+- `wp-config.php`;
+- permisos;
+- seguretat bàsica;
+- enllaços permanents;
+- publicació i comprovació.
 
 ---
 
-# 📂 Organització del repositori
+## Sprint 2 · Administrar WordPress amb WP-CLI
 
-```
-Projecte2-Portal-Corporatiu
-│
-├── README.md
-├── 00-Repte
-├── 01-Sprint-01-Implantar-WordPress
-├── 02-Sprint-02-Administrar-WordPress
-├── 90-Avaluacio
-└── 99-Professora
-```
+Administraràs el portal des del terminal.
 
-Mantén sempre aquesta estructura.
+Treballaràs:
 
----
-
-# 📋 Avaluació
-
-L'avaluació del projecte es basa en dues evidències complementàries.
-
-## 📦 Desenvolupament del projecte (40%)
-
-Es valorarà:
-
-- Implantació correcta de WordPress.
-- Configuració del gestor de continguts.
-- Administració del lloc web.
-- Organització del repositori GitHub.
-- Documentació del procés.
-- Compliment dels requisits del projecte.
-
-Es permet l'ús d'eines d'Intel·ligència Artificial durant el desenvolupament del projecte.
+- WP-CLI;
+- plugins;
+- temes;
+- usuaris i rols;
+- còpies de seguretat;
+- importació i exportació;
+- RSS;
+- actualitzacions;
+- informes d'accés.
 
 ---
 
-## 🧠 Technical Review (60%)
+## Sprint 3 · Adaptar WordPress
 
-Una vegada finalitzat el projecte realitzaràs una **Technical Review** individual a Moodle.
+Crearàs una adaptació mínima del portal mitjançant un tema fill.
 
-La prova estarà formada per preguntes relacionades exclusivament amb aquest projecte.
+Treballaràs:
 
-Es valorarà la teua capacitat per:
-
-- Comprendre el funcionament d'un gestor de continguts.
-- Interpretar configuracions de WordPress.
-- Justificar les decisions tècniques adoptades.
-- Administrar usuaris, temes i plugins.
-- Diagnosticar i resoldre incidències habituals.
-
-Per superar el projecte serà necessari obtenir almenys **4 punts sobre 10** en aquesta prova.
-
----
-
-# ✅ Com començar
-
-Comença pel **Sprint 1 · Implantar WordPress**.
-
-No avances al següent Sprint fins haver completat totes les activitats i el checklist corresponent.
+- estructura de WordPress;
+- `wp-content`, `themes`, `plugins` i `uploads`;
+- tema fill;
+- `style.css`;
+- `functions.php`;
+- shortcode `[porconstech]`;
+- verificació dels canvis;
+- documentació.
 
 ---
 
-# 🚀 Bona sort!
+# 🖥️ Infraestructura
 
-En aquest projecte començaràs a treballar amb un dels gestors de continguts més utilitzats del món.
+El Projecte 2 continua sobre el servidor utilitzat en el Projecte 1.
 
-Aprendràs no només a instal·lar WordPress, sinó també a administrar-lo de forma professional, aplicant procediments i eines similars a les que utilitzen els administradors de sistemes en entorns reals.
+No tornarem a instal·lar tota la pila LAMP.
+
+La infraestructura ja disposa de:
+
+- Ubuntu Server;
+- Apache;
+- PHP;
+- MySQL;
+- HTTPS.
+
+WordPress evolucionarà al llarg dels tres Sprints.
+
+---
+
+# ✅ Resultat final
+
+En acabar el projecte hauràs de disposar d'un portal WordPress:
+
+- instal·lat i publicat;
+- administrat mitjançant WP-CLI;
+- amb usuaris i rols;
+- amb còpia de seguretat;
+- amb mecanismes d'importació/exportació;
+- amb RSS i informes d'accés comprovats;
+- amb un tema fill propi;
+- amb una modificació visual;
+- amb una funcionalitat pròpia incorporada mitjançant codi.
+
+---
+
+# 📊 Avaluació
+
+| Instrument | Pes |
+|---|---:|
+| Sprint 1 · Implantació WordPress | 15 % |
+| Sprint 2 · Administració WP-CLI | 15 % |
+| Sprint 3 · Adaptació WordPress | 10 % |
+| Technical Review | 60 % |
+
+Cada Sprint tindrà la seua pròpia rúbrica.
+
+La **Technical Review** serà individual, es realitzarà en Moodle i no permetrà l'ús d'Intel·ligència Artificial.
+
+Les preguntes estaran basades exclusivament en procediments, configuracions, comprovacions i decisions treballades durant els tres Sprints.
+
+> Per superar el projecte serà necessari obtindre almenys **4/10 en la Technical Review**.
+
+---
+
+# 🤖 Ús de la Intel·ligència Artificial
+
+Durant el desenvolupament del projecte pots utilitzar eines d'IA com a suport.
+
+Pots utilitzar-les per:
+
+- interpretar errors;
+- comprendre configuracions;
+- revisar ordres;
+- entendre fragments de codi;
+- documentar el procés.
+
+Però hauràs de ser capaç d'explicar i interpretar les decisions i modificacions realitzades.

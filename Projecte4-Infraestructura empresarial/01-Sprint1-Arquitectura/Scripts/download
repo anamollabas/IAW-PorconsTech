@@ -1,0 +1,11 @@
+# Copia aquest fitxer com .env i completa les dades.
+# NO puges .env a GitHub.
+
+DB_NAME=lamp_db
+DB_USER=lamp_user
+DB_PASSWORD=CanviaAquestaContrasenya2026
+
+WEB_PRIVATE_IP=172.31.X.X
+DB_PRIVATE_IP=172.31.X.X
+
+APP_REPO=https://github.com/josejuansanchez/iaw-practica-lamp.git

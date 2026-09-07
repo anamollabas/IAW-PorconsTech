@@ -1,0 +1,22 @@
+FROM ubuntu:24.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update \
+    && apt-get install -y \
+       apache2 \
+       php \
+       libapache2-mod-php \
+       php-mysql \
+       mysql-client \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN rm -f /var/www/html/index.html
+
+COPY app/ /var/www/html/
+
+RUN chown -R www-data:www-data /var/www/html
+
+EXPOSE 80
+
+CMD ["apachectl", "-D", "FOREGROUND"]

@@ -4,17 +4,13 @@
 
 En aquest Sprint desplegaràs la primera infraestructura web de PorçonsTech.
 
-Per aconseguir-ho seguirem la pràctica elaborada per **José Juan Sánchez**, adaptada al nostre itinerari formatiu.
+Per aconseguir-ho ens basarem en la pràctica elaborada per **José Juan Sánchez**, adaptada al nostre itinerari formatiu.
 
 ---
 
 ## 📚 Material
 
-Realitza íntegrament la pràctica:
-
-📄 `docs/practica-01-01.pdf`
-
-Llig atentament tots els apartats i completa tots els passos.
+Llig atentament tots els apartats del sprint01-preparació i completa tots els passos.
 
 No passes al següent Sprint fins que totes les comprovacions siguen correctes.
 

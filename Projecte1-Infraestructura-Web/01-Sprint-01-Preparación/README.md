@@ -1,4 +1,4 @@
-# Sprint 2 - Desplegament de la infraestructura LAMP
+# Sprint 1 - Desplegament de la infraestructura LAMP
 
 ## 🎯 Objectiu
 
@@ -16,20 +16,52 @@ No passes al següent Sprint fins que totes les comprovacions siguen correctes.
 
 ---
 
-## 📤 Evidències
+### 📦 Què has d'entregar?
 
-Quan finalitzes la pràctica hauràs de lliurar:
+Aquest Sprint és de preparació.
 
-- Captura de la pàgina web per defecte d'Apache.
-- Captura de la pàgina `phpinfo()`.
-- Captura del servei MariaDB en execució.
+**No captures el procés de registre en AWS Academy ni totes les pantalles del Learner Lab.**
 
----
+### E1 · Entorn preparat
 
-## ✅ Checklist
+Fes **una única captura de terminal** on es veja:
 
-- [ ] Apache funciona.
-- [ ] PHP funciona.
-- [ ] MariaDB funciona.
-- [ ] L'accés SSH és correcte.
-- [ ] La documentació està actualitzada.
+```bash
+aws --version
+aws sts get-caller-identity
+```
+
+La captura ha de demostrar:
+
+- que AWS CLI està instal·lada;
+- que les credencials del Learner Lab funcionen.
+
+Nom:
+
+```text
+e1-entorn-aws.png
+```
+
+![E1](imatges/e1-entorn-aws.png)
+
+### Explica
+
+**1. Per a què utilitzarem AWS CLI?**
+
+> 2-3 línies.
+
+**2. Per què les credencials del Learner Lab poden haver-se d'actualitzar en una altra sessió?**
+
+> 2-3 línies.
+
+## 🔐 No publiques
+
+- `AWS_ACCESS_KEY_ID`
+- `AWS_SECRET_ACCESS_KEY`
+- `AWS_SESSION_TOKEN`
+- captures d'AWS Details amb credencials
+
+## ✅ Entrega completa
+
+- [ ] 1 captura.
+- [ ] 2 explicacions breus.

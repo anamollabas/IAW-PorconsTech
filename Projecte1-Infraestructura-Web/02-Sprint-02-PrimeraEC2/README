@@ -1,0 +1,31 @@
+# Projecte 1 · Sprint pont · La nostra primera EC2
+
+Aquest Sprint s'insereix **entre l'Sprint 1 (AWS Academy + AWS CLI)** i l'Sprint 2 (instal·lació LAMP).
+
+## Per què existeix?
+
+Abans d'instal·lar Apache, PHP i MySQL, l'alumnat necessita haver creat i entés una instància EC2 bàsica:
+
+```text
+AWS Academy / AWS CLI
+        ↓
+PRIMERA EC2
+        ↓
+connexió SSH
+        ↓
+Security Group
+        ↓
+petita prova de servei
+        ↓
+LAMP
+```
+
+## Duració orientativa
+
+**2–3 hores**
+
+## Important
+
+La instància creada en aquest Sprint serà la que es reutilitzarà en l'Sprint següent per instal·lar LAMP.
+
+**No s'ha de terminar la instància ni fer Reset del Learner Lab.**

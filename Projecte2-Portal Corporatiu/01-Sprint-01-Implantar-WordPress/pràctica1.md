@@ -670,6 +670,121 @@ Abans de donar aquest Sprint per finalitzat comprova que:
 - [ ] El repositori GitHub està actualitzat.
 - [ ] S'ha realitzat l'últim commit.
 
+```markdown
+## Evidències a entregar
+
+L'entrega d'aquest Sprint ha d'incloure les següents evidències en el `README.md` del repositori:
+
+### E1 · Comparació de CMS
+Inclou una breu comparació entre **WordPress** i almenys un altre CMS.
+
+Ha d'aparéixer:
+- tipus de CMS;
+- ús principal;
+- llicència;
+- un avantatge;
+- una limitació.
+
+**Explica breument:**
+
+> Per què WordPress és una opció adequada per al portal corporatiu de PorçonsTech?
+
+---
+
+### E2 · WordPress instal·lat i accessible
+Inclou una captura del navegador on es veja:
+- WordPress funcionant;
+- l'adreça utilitzada per accedir;
+- la pàgina principal del lloc web.
+
+**Explica breument:**
+
+> Quins components de la infraestructura necessita WordPress per funcionar?
+
+---
+
+### E3 · Base de dades de WordPress
+Inclou una evidència de MySQL on es veja:
+- la base de dades utilitzada per WordPress;
+- les taules creades durant la instal·lació.
+
+No és necessari mostrar el contingut de les taules.
+
+**Explica breument:**
+
+> Per a què utilitza WordPress aquesta base de dades?
+
+---
+
+### E4 · Connexió WordPress → MySQL
+Indica en el `README.md` la configuració utilitzada:
+
+| Paràmetre | Valor o funció |
+|---|---|
+| `DB_NAME` | |
+| `DB_USER` | |
+| `DB_HOST` | |
+| `DB_PASSWORD` | Configurada però no es publica |
+
+**Explica breument:**
+
+> Què passaria si alguna d'aquestes dades no coincidira amb la configuració de MySQL?
+
+> ⚠️ No publiques la contrasenya real ni el contingut complet de `wp-config.php`.
+
+---
+
+### E5 · Configuració del portal
+Inclou una o dues captures on es puga comprovar:
+- títol del lloc web;
+- idioma;
+- enllaços permanents;
+- configuració bàsica de l'aparença.
+
+**Explica breument:**
+
+> Per què és convenient configurar els enllaços permanents?
+
+---
+
+### E6 · Seguretat
+Inclou una evidència que mostre:
+- permisos coherents en fitxers i directoris;
+- configuració de les claus de seguretat de WordPress;
+- absència de credencials o secrets publicats en GitHub.
+
+**Explica breument:**
+
+> Per què no hem de publicar `wp-config.php`, contrasenyes o claus privades en un repositori?
+
+> ⚠️ No mostres el contingut real de les claus de seguretat.
+
+---
+
+### E7 · Proves de funcionament
+Inclou evidències que demostren que funcionen correctament:
+- la pàgina pública de WordPress;
+- l'accés a `/wp-admin`.
+
+**Explica breument:**
+
+> Què has comprovat per poder afirmar que WordPress està correctament implantat?
+
+---
+
+### Checklist final
+
+- [ ] E1 · Comparació de CMS
+- [ ] E2 · WordPress instal·lat i accessible
+- [ ] E3 · Base de dades i taules de WordPress
+- [ ] E4 · Connexió WordPress → MySQL
+- [ ] E5 · Configuració del portal
+- [ ] E6 · Seguretat
+- [ ] E7 · Proves de funcionament
+
+> **Important:** no inclogues contrasenyes, credencials d'AWS, claus `.pem`, claus privades ni altres secrets.
+```
+
 
 Durant aquest Sprint es treballen els següents **criteris d'avaluació** del **RA2 - Implantació de gestors de continguts**:
 

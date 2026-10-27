@@ -1823,64 +1823,121 @@ Indica quina informació pots obtindre del registre:
 Explica com aquesta informació pot ajudar una persona administradora del sistema.
 
 ---
-# ✅ Checklist final
+## Evidències a entregar
 
-Abans de donar el Sprint per finalitzat comprova que:
+L’entrega d’aquest Sprint ha de permetre comprovar que eres capaç d’**administrar WordPress des de la línia d’ordres utilitzant WP-CLI**.
 
-## WP-CLI
+No cal fer captures de totes les ordres executades. Has d’aportar les evidències següents i explicar breument què demostra cadascuna.
 
-- [ ] WP-CLI està instal·lat i funciona correctament.
-- [ ] Saps consultar la configuració i l'estat de WordPress.
+---
 
-## Plugins
+### E1 · WP-CLI instal·lat i operatiu
 
-- [ ] Saps llistar plugins.
-- [ ] Has instal·lat i activat plugins.
-- [ ] Has modificat la configuració d'un plugin.
-- [ ] Saps actualitzar, desactivar i eliminar plugins.
+Inclou una captura del terminal on es veja que **WP-CLI està instal·lat i funciona correctament**.
 
-## Temes
+La captura ha de permetre identificar la utilitat `wp` i la seua informació o ajuda.
 
-- [ ] Saps consultar els temes instal·lats.
-- [ ] Has instal·lat i activat un tema.
-- [ ] Saps actualitzar i eliminar temes.
+**Explica breument:**
 
-## Usuaris
+> Què és WP-CLI i quin avantatge té respecte a realitzar totes les tasques des de `wp-admin`?
 
-- [ ] Has creat usuaris amb diferents perfils.
-- [ ] Has comprovat les diferències entre els seus permisos.
-- [ ] Has modificat el rol d'un usuari.
-- [ ] Saps eliminar un usuari preservant el seu contingut.
+---
 
-## Manteniment
+### E2 · Gestió de plugins amb WP-CLI
 
-- [ ] Saps consultar la versió de WordPress.
-- [ ] Saps comprovar i aplicar actualitzacions.
-- [ ] Has gestionat l'idioma del lloc.
+Inclou una captura del terminal on es veja el resultat de:
 
-## Còpies i continguts
+`wp plugin list`
 
-- [ ] Has realitzat una còpia dels fitxers.
-- [ ] Has exportat la base de dades.
-- [ ] Has verificat les còpies creades.
-- [ ] Has exportat continguts en WXR/XML.
-- [ ] Has importat continguts.
-- [ ] Has treballat amb informació en CSV i JSON.
-- [ ] Entens la diferència entre backup i exportació de continguts.
+i una altra evidència que demostre que has realitzat amb WP-CLI alguna operació de gestió sobre un plugin:
 
-## Sindicació i monitorització
+- instal·lar-lo;
+- activar-lo;
+- configurar-lo;
+- desactivar-lo;
+- o eliminar-lo.
 
-- [ ] Has comprovat el canal RSS.
-- [ ] Has modificat la configuració de sindicació.
-- [ ] Has consultat els logs d'Apache.
-- [ ] Has obtingut informació sobre els accessos al portal.
-- [ ] Has elaborat un breu informe d'accessos.
+Si has treballat amb el plugin `wps-hide-login`, inclou també una evidència que demostre que la configuració realitzada funciona.
 
-## Documentació
+**Explica breument:**
 
-- [ ] Has completat les tasques PorçonsTech.
-- [ ] El repositori GitHub està actualitzat.
-- [ ] Has documentat les incidències importants trobades durant el Sprint.
+> Quina operació has realitzat sobre el plugin i com has comprovat que el canvi s’ha aplicat realment?
+
+---
+
+### E3 · Gestió de temes amb WP-CLI
+
+Inclou una captura del resultat de:
+
+`wp theme list`
+
+i una evidència on es veja que has **instal·lat o activat un tema utilitzant WP-CLI**.
+
+Afig també una captura del navegador on es veja el portal amb el tema activat.
+
+**Explica breument:**
+
+> Com pots saber des de WP-CLI quin tema està actiu?
+
+---
+
+### E4 · Actualitzacions de WordPress
+
+Inclou una evidència del terminal on es veja la comprovació o actualització de:
+
+- el core de WordPress;
+- els plugins;
+- els temes.
+
+No és necessari fer una captura per cada ordre. Pots agrupar les comprovacions en una o dues captures clares.
+
+**Explica breument:**
+
+> Per què és important mantindre actualitzats el core, els plugins i els temes de WordPress?
+
+---
+
+### E5 · Configuració realitzada amb WP-CLI
+
+Inclou una evidència d’almenys **una configuració del lloc realitzada des de WP-CLI**, per exemple:
+
+- canvi d’idioma;
+- configuració dels enllaços permanents;
+- modificació d’una opció de WordPress.
+
+Si has configurat els enllaços permanents, inclou també una captura del navegador on es veja que una entrada és accessible amb la nova estructura d’URL.
+
+**Explica breument:**
+
+> Quina configuració has modificat i com has comprovat que el canvi funciona?
+
+---
+
+### E6 · Portal final verificat
+
+Inclou una captura final del navegador on es veja el **portal WordPress funcionant després de les operacions realitzades amb WP-CLI**.
+
+La captura ha de permetre comprovar que els canvis realitzats no han deixat el portal inoperatiu.
+
+**Explica breument:**
+
+> Quines comprovacions has realitzat per assegurar-te que WordPress continua funcionant correctament després d’administrar-lo amb WP-CLI?
+
+---
+
+### Checklist final
+
+Abans d’entregar comprova que has inclòs:
+
+- [ ] E1 · WP-CLI instal·lat i operatiu
+- [ ] E2 · Gestió de plugins amb WP-CLI
+- [ ] E3 · Gestió de temes amb WP-CLI
+- [ ] E4 · Comprovació o gestió d’actualitzacions
+- [ ] E5 · Configuració del lloc amb WP-CLI
+- [ ] E6 · Portal final funcionant
+
+> **Important:** les captures han de demostrar resultats, no simplement que has escrit una ordre. No publiques contrasenyes, credencials, claus privades ni informació sensible.
+---
 
 
 # 🎯 Criteris d'avaluació treballats

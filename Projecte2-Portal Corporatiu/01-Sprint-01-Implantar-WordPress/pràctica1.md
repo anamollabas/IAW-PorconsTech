@@ -783,7 +783,6 @@ Inclou evidències que demostren que funcionen correctament:
 - [ ] E7 · Proves de funcionament
 
 > **Important:** no inclogues contrasenyes, credencials d'AWS, claus `.pem`, claus privades ni altres secrets.
-```
 
 
 Durant aquest Sprint es treballen els següents **criteris d'avaluació** del **RA2 - Implantació de gestors de continguts**:

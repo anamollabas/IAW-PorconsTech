@@ -670,7 +670,7 @@ Abans de donar aquest Sprint per finalitzat comprova que:
 - [ ] El repositori GitHub està actualitzat.
 - [ ] S'ha realitzat l'últim commit.
 
-```markdown
+
 ## Evidències a entregar
 
 L'entrega d'aquest Sprint ha d'incloure les següents evidències en el `README.md` del repositori:
